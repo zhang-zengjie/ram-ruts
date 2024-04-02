@@ -1,0 +1,182 @@
+2024-03-15 12:04:07,488: A has accepted the new measurement at step 0!
+2024-03-15 12:04:09,116: B has accepted the new measurement at step 0!
+2024-03-15 12:04:10,779: C has accepted the new measurement at step 0!
+2024-03-15 12:04:12,425: D has accepted the new measurement at step 0!
+2024-03-15 12:04:14,048: A has accepted the new measurement at step 1!
+2024-03-15 12:04:15,764: B has accepted the new measurement at step 1!
+2024-03-15 12:04:17,449: C has accepted the new measurement at step 1!
+2024-03-15 12:04:19,084: D has accepted the new measurement at step 1!
+2024-03-15 12:04:19,115: A has probed task FETCH CASE-I!
+2024-03-15 12:04:22,208: A has probed task FETCH CASE-II!
+2024-03-15 12:04:25,176: A has probed task FETCH CASE-IV!
+2024-03-15 12:04:28,173: B has probed task FETCH CASE-I!
+2024-03-15 12:04:31,247: B has probed task FETCH CASE-II!
+2024-03-15 12:04:34,293: B has probed task FETCH CASE-IV!
+2024-03-15 12:04:37,353: C has probed task FETCH CASE-I!
+2024-03-15 12:04:40,400: C has probed task FETCH CASE-II!
+2024-03-15 12:04:43,429: C has probed task FETCH CASE-IV!
+2024-03-15 12:04:46,554: D has probed task FETCH CASE-I!
+2024-03-15 12:04:46,554: D has probed task FETCH CASE-II!
+2024-03-15 12:04:46,554: D has probed task FETCH CASE-IV!
+2024-03-15 12:04:46,554: Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+2024-03-15 12:04:46,554: 
+2024-03-15 12:04:46,554: CPU model: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+2024-03-15 12:04:46,570: Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+2024-03-15 12:04:46,570: 
+2024-03-15 12:04:46,570: Optimize a model with 10 rows, 16 columns and 31 nonzeros
+2024-03-15 12:04:46,571: Model fingerprint: 0x499e158e
+2024-03-15 12:04:46,571: Variable types: 0 continuous, 16 integer (16 binary)
+2024-03-15 12:04:46,571: Coefficient statistics:
+2024-03-15 12:04:46,572:   Matrix range     [1e+00, 1e+00]
+2024-03-15 12:04:46,572:   Objective range  [1e-01, 1e-01]
+2024-03-15 12:04:46,572:   Bounds range     [1e+00, 1e+00]
+2024-03-15 12:04:46,572:   RHS range        [1e+00, 1e+00]
+2024-03-15 12:04:46,573: Found heuristic solution: objective 0.4200000
+2024-03-15 12:04:46,574: Presolve removed 5 rows and 10 columns
+2024-03-15 12:04:46,574: Presolve time: 0.00s
+2024-03-15 12:04:46,575: Presolved: 5 rows, 6 columns, 12 nonzeros
+2024-03-15 12:04:46,575: Variable types: 0 continuous, 6 integer (6 binary)
+2024-03-15 12:04:46,576: 
+2024-03-15 12:04:46,576: Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+2024-03-15 12:04:46,576: Thread count was 12 (of 12 available processors)
+2024-03-15 12:04:46,577: 
+2024-03-15 12:04:46,577: Solution count 1: 0.42 
+2024-03-15 12:04:46,577: 
+2024-03-15 12:04:46,577: Optimal solution found (tolerance 1.00e-04)
+2024-03-15 12:04:46,577: Best objective 4.200000000000e-01, best bound 4.200000000000e-01, gap 0.0000%
+2024-03-15 12:04:46,577: A has accepted the new task FETCH CASE-II at step 2!
+2024-03-15 12:04:46,577: B has accepted the new task FETCH CASE-IV at step 2!
+2024-03-15 12:04:46,577: D has accepted the new task FETCH CASE-I at step 2!
+2024-03-15 12:04:49,603: A has accepted the new measurement at step 2!
+2024-03-15 12:04:52,596: B has accepted the new measurement at step 2!
+2024-03-15 12:04:54,213: C has accepted the new measurement at step 2!
+2024-03-15 12:04:57,242: D has accepted the new measurement at step 2!
+2024-03-15 12:05:00,241: A has accepted the new measurement at step 3!
+2024-03-15 12:05:03,239: B has accepted the new measurement at step 3!
+2024-03-15 12:05:04,840: C has accepted the new measurement at step 3!
+2024-03-15 12:05:07,886: D has accepted the new measurement at step 3!
+2024-03-15 12:05:10,917: A has accepted the new measurement at step 4!
+2024-03-15 12:05:13,931: B has accepted the new measurement at step 4!
+2024-03-15 12:05:15,533: C has accepted the new measurement at step 4!
+2024-03-15 12:05:18,531: D has accepted the new measurement at step 4!
+2024-03-15 12:05:21,531: A has accepted the new measurement at step 5!
+2024-03-15 12:05:24,451: B has rejected the new measurement at step 5!
+2024-03-15 12:05:26,053: C has accepted the new measurement at step 5!
+2024-03-15 12:05:29,103: D has accepted the new measurement at step 5!
+2024-03-15 12:05:32,082: A has accepted the new measurement at step 6!
+2024-03-15 12:05:35,050: B has rejected the new measurement at step 6!
+2024-03-15 12:05:36,635: C has accepted the new measurement at step 6!
+2024-03-15 12:05:39,665: D has accepted the new measurement at step 6!
+2024-03-15 12:05:42,648: A has rejected the new measurement at step 7!
+2024-03-15 12:05:45,676: B has accepted the new measurement at step 7!
+2024-03-15 12:05:47,262: C has accepted the new measurement at step 7!
+2024-03-15 12:05:50,245: D has accepted the new measurement at step 7!
+2024-03-15 12:05:50,260: A has probed task FETCH CASE-III!
+2024-03-15 12:05:54,607: A has probed task FETCH CASE-II!
+2024-03-15 12:05:59,050: B has probed task FETCH CASE-III!
+2024-03-15 12:06:03,429: B has probed task FETCH CASE-II!
+2024-03-15 12:06:03,429: C has probed task FETCH CASE-III!
+2024-03-15 12:06:03,429: C has probed task FETCH CASE-II!
+2024-03-15 12:06:07,841: D has probed task FETCH CASE-III!
+2024-03-15 12:06:07,841: D has probed task FETCH CASE-II!
+2024-03-15 12:06:07,841: Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+2024-03-15 12:06:07,841: 
+2024-03-15 12:06:07,841: CPU model: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+2024-03-15 12:06:07,841: Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+2024-03-15 12:06:07,841: 
+2024-03-15 12:06:07,841: Optimize a model with 10 rows, 16 columns and 28 nonzeros
+2024-03-15 12:06:07,841: Model fingerprint: 0x174b1b06
+2024-03-15 12:06:07,841: Variable types: 0 continuous, 16 integer (16 binary)
+2024-03-15 12:06:07,841: Coefficient statistics:
+2024-03-15 12:06:07,841:   Matrix range     [1e+00, 1e+00]
+2024-03-15 12:06:07,841:   Objective range  [1e-01, 1e-01]
+2024-03-15 12:06:07,856:   Bounds range     [1e+00, 1e+00]
+2024-03-15 12:06:07,856:   RHS range        [1e+00, 1e+00]
+2024-03-15 12:06:07,856: 
+2024-03-15 12:06:07,856: Loaded MIP start from previous solve with objective 0.28
+2024-03-15 12:06:07,856: 
+2024-03-15 12:06:07,856: Presolve removed 10 rows and 16 columns
+2024-03-15 12:06:07,856: Presolve time: 0.00s
+2024-03-15 12:06:07,856: Presolve: All rows and columns removed
+2024-03-15 12:06:07,856: 
+2024-03-15 12:06:07,856: Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+2024-03-15 12:06:07,856: Thread count was 1 (of 12 available processors)
+2024-03-15 12:06:07,856: 
+2024-03-15 12:06:07,856: Solution count 1: 0.28 
+2024-03-15 12:06:07,856: 
+2024-03-15 12:06:07,856: Optimal solution found (tolerance 1.00e-04)
+2024-03-15 12:06:07,856: Best objective 2.800000000000e-01, best bound 2.800000000000e-01, gap 0.0000%
+2024-03-15 12:06:07,856: A has accepted the new task FETCH CASE-II at step 8!
+2024-03-15 12:06:07,856: D has accepted the new task FETCH CASE-III at step 8!
+2024-03-15 12:06:12,318: A has accepted the new measurement at step 8!
+2024-03-15 12:06:15,361: B has accepted the new measurement at step 8!
+2024-03-15 12:06:16,978: C has accepted the new measurement at step 8!
+2024-03-15 12:06:21,469: D has accepted the new measurement at step 8!
+2024-03-15 12:06:25,929: A has accepted the new measurement at step 9!
+2024-03-15 12:06:28,928: B has accepted the new measurement at step 9!
+2024-03-15 12:06:30,545: C has accepted the new measurement at step 9!
+2024-03-15 12:06:35,003: D has accepted the new measurement at step 9!
+2024-03-15 12:06:39,352: A has rejected the new measurement at step 10!
+2024-03-15 12:06:42,367: B has accepted the new measurement at step 10!
+2024-03-15 12:06:43,953: C has accepted the new measurement at step 10!
+2024-03-15 12:06:48,286: D has accepted the new measurement at step 10!
+2024-03-15 12:06:52,633: A has accepted the new measurement at step 11!
+2024-03-15 12:06:55,629: B has rejected the new measurement at step 11!
+2024-03-15 12:06:57,202: C has accepted the new measurement at step 11!
+2024-03-15 12:07:01,630: D has accepted the new measurement at step 11!
+2024-03-15 12:07:05,964: A has accepted the new measurement at step 12!
+2024-03-15 12:07:08,946: B has accepted the new measurement at step 12!
+2024-03-15 12:07:10,516: C has accepted the new measurement at step 12!
+2024-03-15 12:07:14,896: D has accepted the new measurement at step 12!
+2024-03-15 12:07:19,221: A has accepted the new measurement at step 13!
+2024-03-15 12:07:22,230: B has accepted the new measurement at step 13!
+2024-03-15 12:07:23,803: C has accepted the new measurement at step 13!
+2024-03-15 12:07:28,227: D has rejected the new measurement at step 13!
+2024-03-15 12:07:32,657: A has accepted the new measurement at step 14!
+2024-03-15 12:07:35,608: B has accepted the new measurement at step 14!
+2024-03-15 12:07:37,209: C has accepted the new measurement at step 14!
+2024-03-15 12:07:41,620: D has accepted the new measurement at step 14!
+2024-03-15 12:07:46,413: A has rejected the new task GO HOME A at step 15!
+2024-03-15 12:07:49,880: B has accepted the new task GO HOME B at step 15!
+2024-03-15 12:07:51,999: C has accepted the new task GO HOME C at step 15!
+2024-03-15 12:07:56,897: D has accepted the new task GO HOME D at step 15!
+2024-03-15 12:08:01,324: A has accepted the new measurement at step 15!
+2024-03-15 12:08:04,777: B has accepted the new measurement at step 15!
+2024-03-15 12:08:06,865: C has accepted the new measurement at step 15!
+2024-03-15 12:08:11,763: D has accepted the new measurement at step 15!
+2024-03-15 12:08:16,319: A has accepted the new measurement at step 16!
+2024-03-15 12:08:19,789: B has accepted the new measurement at step 16!
+2024-03-15 12:08:22,600: C has accepted the new measurement at step 16!
+2024-03-15 12:08:29,032: D has rejected the new measurement at step 16!
+2024-03-15 12:08:33,788: A has rejected the new measurement at step 17!
+2024-03-15 12:08:37,632: B has accepted the new measurement at step 17!
+2024-03-15 12:08:39,876: C has accepted the new measurement at step 17!
+2024-03-15 12:08:44,775: D has accepted the new measurement at step 17!
+2024-03-15 12:08:49,218: A has accepted the new measurement at step 18!
+2024-03-15 12:08:52,672: B has accepted the new measurement at step 18!
+2024-03-15 12:08:54,776: C has accepted the new measurement at step 18!
+2024-03-15 12:08:59,660: D has accepted the new measurement at step 18!
+2024-03-15 12:09:04,009: A has accepted the new measurement at step 19!
+2024-03-15 12:09:07,464: B has accepted the new measurement at step 19!
+2024-03-15 12:09:09,535: C has accepted the new measurement at step 19!
+2024-03-15 12:09:14,480: D has accepted the new measurement at step 19!
+2024-03-15 12:09:18,923: A has accepted the new measurement at step 20!
+2024-03-15 12:09:22,425: B has accepted the new measurement at step 20!
+2024-03-15 12:09:24,529: C has accepted the new measurement at step 20!
+2024-03-15 12:09:29,635: D has accepted the new measurement at step 20!
+2024-03-15 12:09:34,142: A has accepted the new measurement at step 21!
+2024-03-15 12:09:37,689: B has accepted the new measurement at step 21!
+2024-03-15 12:09:39,776: C has accepted the new measurement at step 21!
+2024-03-15 12:09:44,668: D has accepted the new measurement at step 21!
+2024-03-15 12:09:49,048: A has accepted the new measurement at step 22!
+2024-03-15 12:09:52,501: B has accepted the new measurement at step 22!
+2024-03-15 12:09:54,587: C has accepted the new measurement at step 22!
+2024-03-15 12:09:59,501: D has accepted the new measurement at step 22!
+2024-03-15 12:10:03,866: A has accepted the new measurement at step 23!
+2024-03-15 12:10:07,274: B has accepted the new measurement at step 23!
+2024-03-15 12:10:09,346: C has rejected the new measurement at step 23!
+2024-03-15 12:10:14,166: D has accepted the new measurement at step 23!
+2024-03-15 12:10:18,513: A has accepted the new measurement at step 24!
+2024-03-15 12:10:22,030: B has rejected the new measurement at step 24!
+2024-03-15 12:10:24,119: C has rejected the new measurement at step 24!
+2024-03-15 12:10:29,050: D has rejected the new measurement at step 24!
