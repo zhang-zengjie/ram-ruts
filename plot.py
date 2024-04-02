@@ -1,18 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from commons.functions import get_coordinates
-from config.params import agent
-from config.specs import SAFETY, HOME, TARGETA, TARGETB, CHARGER, OBSTACLE
+from commons.configs import get_agent
+from commons.configs import SAFETY, HOME, TARGETA, TARGETB, CHARGER, OBSTACLE
 
 # Load data
-prob = np.load('data/single/' + agent.name + '_prob.npy')
-atime = np.load('data/single/' + agent.name + '_accepted_time.npy')
-state_meas = np.load('data/single/' + agent.name + '_meas_state.npy')
-nom_state = np.load('data/single/' + agent.name + '_hist_nom_state.npy')
 
-# Get parameters
-_, N = prob.shape
+N = 40                  # Time-horizon
+n = 2                   # System dimension
 
+agent = get_agent(n, N)
+
+prob = np.load('data/' + agent.name + '_prob.npy')
+atime = np.load('data/' + agent.name + '_accepted_time.npy')
+state_meas = np.load('data/' + agent.name + '_meas_state.npy')
+nom_state = np.load('data/' + agent.name + '_hist_nom_state.npy')
 
 # Define colors
 OBSTACLE_COLOR = [1, 0.3, 0.3]

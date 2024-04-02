@@ -1,16 +1,24 @@
 import numpy as np
-from config.specs import time_list_single, spec_list_single
-from config.params import N, agent
 from gurobipy import GRB
 from commons.functions import config_logger
+from commons.configs import get_agent, get_spec
 import logging
 
+seed = 3                # Set random seed
+np.random.seed(seed)
+N = 40                  # Time-horizon
+n = 2                   # System dimension
 
-config_logger(logging, 'data/single/INFO.log')
+agent = get_agent(n, N)
+_, lists = get_spec(n)
+times, specs = lists
+
+
+config_logger(logging, 'data/INFO.log')
 for t in range(N):
 
-    if t in time_list_single:
-        new_task = spec_list_single[time_list_single.index(t)]
+    if t in times:
+        new_task = specs[times.index(t)]
         sln = agent.probe_task(t, new_task)
         if sln[-1] != GRB.OPTIMAL:
                 agent.reject_task(t)
@@ -19,7 +27,7 @@ for t in range(N):
     agent.apply_control(t, agent.probe_task(t))
 
 # Save Memory
-np.save('data/single/' + agent.name + '_prob.npy', agent.accept_prob)
-np.save('data/single/' + agent.name + '_accepted_time.npy', agent.accept_time)
-np.save('data/single/' + agent.name + '_meas_state.npy', agent.xx)
-np.save('data/single/' + agent.name + '_hist_nom_state.npy', agent.zh)
+np.save('data/' + agent.name + '_prob.npy', agent.accept_prob)
+np.save('data/' + agent.name + '_accepted_time.npy', agent.accept_time)
+np.save('data/' + agent.name + '_meas_state.npy', agent.xx)
+np.save('data/' + agent.name + '_hist_nom_state.npy', agent.zh)

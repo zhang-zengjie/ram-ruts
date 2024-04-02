@@ -53,6 +53,7 @@ class Agent:
 
         self.solver = MICPSolver(self.psi, self.sys, self.zz, self.N, self.diag_sigma_inf, uu=self.vv, riskH=self.risk, mark=0)
         self.solver.AddSTLConstraints(self.psi)
+        self.solver.AddNewSTLProbConstraint(self.psi)
         self.solver.AddControlBounds(self.u_limits[:, 0], self.u_limits[:, 1])
 
 
@@ -89,11 +90,9 @@ class Agent:
         self.solver.mark = t
         self.solver.riskH = self.risk
 
-        if spec is None:
-            STLProbConstrs = self.solver.AddSTLProbConstraintSimple(self.accept_phi)
-        else:
+        if spec is not None:
             STLConstrs = self.solver.AddSTLConstraints(spec)
-            STLProbConstrs = self.solver.AddSTLProbConstraintSimple(self.accept_phi + [spec])
+            STLProbConstrs = self.solver.AddNewSTLProbConstraint(spec)
             
         DynConstrs = self.solver.AddDynamicsConstraints()
         RiskConstrs = self.solver.AddRiskConstraints()
@@ -102,12 +101,12 @@ class Agent:
         self.solver.AddQuadraticInputCost(self.R)
         z, v, risk, flag, _ = self.solver.Solve()
 
-        self.solver.model.remove(STLProbConstrs)
         self.solver.model.remove(DynConstrs)
         self.solver.model.remove(RiskConstrs)
 
         if spec is not None:
             self.solver.model.remove(STLConstrs)
+            self.solver.model.remove(STLProbConstrs)
 
         self.solver.model.update()
 
@@ -121,6 +120,7 @@ class Agent:
         self.accept_prob += [np.ones((self.N, ))]
         self.accept_time += [t]
         self.solver.AddSTLConstraints(spec)
+        self.solver.AddNewSTLProbConstraint(spec)
 
         logging.info(self.name + " has accepted the new task " + spec.name + " at step " + str(t) + "!")
 
