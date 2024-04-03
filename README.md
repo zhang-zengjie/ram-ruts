@@ -6,10 +6,15 @@ A Python library used to perform Model Predictive Control (MPC) for a single sto
 
 ## Installation
 
-#### System Requirements
+### System Requirements
 
 **Operating system**
- - Python `3.10` (or lower)
+ - Windows (compatible in general, successfully tested on 11)
+ - Linux (compatible in general, successfully tested on 20.04)
+ - MacOS (compatible in general)
+
+**Python Environment**
+ - Python version: `>=3.7` or `<=3.11`
  - Required Packages: `numpy`, `treelib`, `gurobi`, `matplotlib`, `scipy`. For `conda`, they can be installed using the following commands:
 ```
 conda install -c anaconda numpy
