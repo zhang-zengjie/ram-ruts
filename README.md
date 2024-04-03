@@ -9,9 +9,9 @@ A Python library used to perform Model Predictive Control (MPC) for a single sto
 ### System Requirements
 
 **Operating system**
- - Windows (compatible in general, successfully tested on 11)
- - Linux (compatible in general, successfully tested on 20.04)
- - MacOS (compatible in general)
+ - *Windows* (compatible in general, successfully tested on 11)
+ - *Linux* (compatible in general, successfully tested on 20.04)
+ - *MacOS* (compatible in general)
 
 **Python Environment**
  - Python version: `>=3.7` or `<=3.11`
@@ -31,38 +31,14 @@ This benchmark is based on the [stlpy](https://github.com/vincekurtz/stlpy/blob/
 
 - Run the main script `main.py` to generate data in `/data`;
 - Watch the terminal or check the logging file `/data/INFO.log` for the runtime information;
-- Run `plot.py` to plot the results`.
+- Run `plot.py` to plot the results; the figures may impede each other; drag the figures for a better view.
 
-### Instructions for the multi-agent case
+### Fine-Tuning the Code
 
-- Run `auction.main.py` for the multi-agent auction case;
-- Run `auction.plot.py` to plot the results for the multi-agent auction case;
-- Checkout the logging information in `auction.info.log`.
+Feel free to try out the code with different parameter settings in the `configs.py' file.
 
-### License
+- Change the rectangular regions `WORKSPACE', `HOME', `TARGETA', `TARGETB'
 
-For the license of the `stlpy` toolbox, refer to `stlpy/LICENSE`.
+## License
 
-## Changes made to include multiple rho variables
-
-- Change the dimension of rho variables:
-```
-self.rho = self.model.addMVar((self.T, ), name="rho", lb=0.0)   # 1->self.T to incorporate multiple dimensions
-```
-- Change the cost function:
-```
-def AddRobustnessCost(self):
-        self.cost -= np.ones(self.rho.shape).T @ self.rho  # The cost is the negative summary of multiple rho values
-```
-- Multiple constraints to restrict the limits for rhos
-```
-def AddRobustnessConstraint(self, rho_min=0.0):
-        for rho in self.rho:
-            self.model.addConstr( rho >= rho_min )
-```
-- Multiple constraints to specify the satisfaction of specifications
-```
-if isinstance(formula, LinearPredicate):
-            # self.rho -> self.rho[t]
-            self.model.addConstr( formula.a.T@self.y[:,t] - formula.b + (1-z)*self.M  >= self.rho[t] )
-```
+For the license of this library, refer to `LICENSE`.
