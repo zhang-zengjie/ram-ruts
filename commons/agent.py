@@ -156,12 +156,3 @@ class Agent:
         self.update_memory(t)
         self.update_probabilities(t)
         self.update_measurement(t+1)
-
-
-    def bid(self, t, spec):
-        _, _, risk, flag = self.probe_task(t, spec)
-        if flag != GRB.OPTIMAL:
-            price = 1
-        else:
-            price = calculate_risks([spec], risk)[0]
-        return price

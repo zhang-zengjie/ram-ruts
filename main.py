@@ -1,7 +1,7 @@
 import numpy as np
 from gurobipy import GRB
 from commons.functions import config_logger
-from commons.configs import get_agent, get_spec
+from configs import get_agent, get_spec
 import logging
 
 seed = 3                # Set random seed
