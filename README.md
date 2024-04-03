@@ -37,7 +37,25 @@ This library is associated with the Arxiv article in [https://arxiv.org/abs/2402
 
 **Python Environment**
  - Python version: `>=3.7` or `<=3.11`
- - Required Packages: `numpy`, `treelib`, `gurobi`, `matplotlib`, `scipy`. For `conda`, they can be installed using the following commands:
+ - **Recommended**: IDE ([VS code](https://code.visualstudio.com/) or [Pycharm](https://www.jetbrains.com/pycharm/)) and [Conda](https://www.anaconda.com/)
+ - Required Packages: `numpy`, `treelib`, `gurobi`, `matplotlib`, `scipy`. 
+ 
+### Quick Installation
+ 
+1. Install conda following this [instruction](https://conda.io/projects/conda/en/latest/user-guide/install/index.html);
+
+2. Open conda shell, create an independent project environment;
+```
+conda create --name ram-ruttl python=3.10
+```
+
+3. In the same shell, activate the created environment
+```
+conda activate ram-ruttl
+```
+
+4. In the same shell, within the `ram-ruttl` environment, install the dependencies one by one
+
 ```
 conda install -c anaconda numpy
 conda install -c conda-forge treelib
@@ -54,7 +72,9 @@ This benchmark is based on the [stlpy](https://github.com/vincekurtz/stlpy/blob/
 
 - Run the main script `main.py` to generate data in `/data`;
 - Watch the terminal or check the logging file `/data/INFO.log` for the runtime information;
-- Run `plot.py` to plot the results; the figures may impede each other; drag the figures for a better view.
+- Confirm that the data files `*.npy` are generated in `/data`;
+- Run `plot.py` to plot the results, and yous should see a figure as above if successful; 
+- The figures may impede each other; Drag the figures for a better view.
 
 ### Fine-Tuning the Code
 
