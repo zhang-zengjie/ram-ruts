@@ -43,7 +43,7 @@ plt.figure(figsize=(8, 3.5))
 # Fill figure
 plt.fill(*get_coordinates(RG['WS']), color=CM['WS'])
 plt.fill(*get_coordinates(RG['TARGET-A']), color=CM['TARGET-A'])
-plt.fill(*get_coordinates(RG['TARGET-B']), color=CM['TARGET-B'])
+plt.fill(*get_coordinates(RG['TARGET-B']), color=CM['TARGET-A'])
 plt.fill(*get_coordinates(RG['HOME']), color=CM['HOME'])
 plt.fill(*get_coordinates(RG['CHARGER']), color=CM['CHARGER'])
 plt.fill(*get_coordinates(RG['OBSTACLE']), color=CM['OBSTACLE'])
@@ -58,8 +58,8 @@ plt.plot(state_meas[0], state_meas[1], marker='o', color=STATE_COLOR[-1],
              linewidth=2, markersize=4, label=f'Traj. based on meas.')
 
 # Name objects in figure
-plt.text((RG['TARGET-A'][0] + RG['TARGET-A'][1]) / 2, (RG['TARGET-A'][2] + RG['TARGET-A'][3]) / 2 - 0.25, 'TARGET-A', weight='bold', fontsize=10, horizontalalignment='center')
-plt.text((RG['TARGET-B'][0] + RG['TARGET-B'][1]) / 2, (RG['TARGET-B'][2] + RG['TARGET-B'][3]) / 2 + -0.25, 'TARGET-B', weight='bold', fontsize=10, horizontalalignment='center')
+plt.text((RG['TARGET-A'][0] + RG['TARGET-A'][1]) / 2, (RG['TARGET-A'][2] + RG['TARGET-A'][3]) / 2 - 0.25, 'TARGET', weight='bold', fontsize=10, horizontalalignment='center')
+plt.text((RG['TARGET-B'][0] + RG['TARGET-B'][1]) / 2, (RG['TARGET-B'][2] + RG['TARGET-B'][3]) / 2 + -0.25, 'TARGET', weight='bold', fontsize=10, horizontalalignment='center')
 plt.text((RG['HOME'][0]+RG['HOME'][1])/2, (RG['HOME'][2]+RG['HOME'][3])/2-0.25, 'HOME', weight='bold',  fontsize=10, horizontalalignment='center')
 plt.text((RG['CHARGER'][0]+RG['CHARGER'][1])/2, (RG['CHARGER'][2]+RG['CHARGER'][3])/2-0.2, 'CHARGER', weight='bold', fontsize=10, horizontalalignment='center')
 plt.text((RG['OBSTACLE'][0]+RG['OBSTACLE'][1])/2, (RG['OBSTACLE'][2]+RG['OBSTACLE'][3])/2-0.2, 'OBSTACLE', weight='bold', fontsize=10, horizontalalignment='center')
