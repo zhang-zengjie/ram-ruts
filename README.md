@@ -24,9 +24,8 @@ conda install -c conda-forge matplotlib
 conda install -c anaconda scipy
 ```
 
-### Toolbox stlpy
-
-This benchmark is based on the `stlpy` toolbox (https://github.com/vincekurtz/stlpy/blob/main/README.md). Please cite the source when you develop your own benchmark.
+**Toolbox stlpy**
+This benchmark is based on the [stlpy](https://github.com/vincekurtz/stlpy/blob/main/README.md) toolbox. Please cite the source when you develop your own benchmark.
 
 ### Instructions for the single-agent case
 
