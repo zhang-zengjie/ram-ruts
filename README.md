@@ -1,4 +1,6 @@
-# Benchmark with multiple rho variables for time-varying specification satisfaction
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+# Risk-Aware MPC for Run-Time Temporal Logic (RaM-RutTL)
 
 ## Basic run
 ### Requirements
