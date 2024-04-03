@@ -2,7 +2,9 @@
 
 # Risk-Aware MPC for Run-Time Temporal Logic (RaM-RutTL)
 
-## Basic run
+A Python library used to perform Model Predictive Control (MPC) for a single stochastic agent with Run-Time Temporal Logic
+
+## Installation
 ### Requirements
  - Python `3.10` (or lower)
  - Required Packages: `numpy`, `treelib`, `gurobi`, `matplotlib`, `scipy`. For `conda`, they can be installed using the following commands:
