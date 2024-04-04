@@ -1,2 +1,5 @@
 *.npy
 *.png
+*/.DS_store
+*/._pycache_
+*/.idea
