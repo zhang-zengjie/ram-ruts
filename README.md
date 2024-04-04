@@ -34,9 +34,9 @@ The `probstlpy` library in this project is modified from the [stlpy](https://git
 ### System Requirements
 
 **Operating system**
- - *Windows* (compatible in general, successfully tested on 11)
- - *Linux* (compatible in general, successfully tested on 20.04)
- - *MacOS* (compatible in general)
+ - *Windows* (compatible in general, succeed on 11)
+ - *Linux* (compatible in general, succeed on 20.04)
+ - *MacOS* (compatible in general, succeed on 13.4.1)
 
 **Python Environment**
  - Python version: test passed on `python=3.11`
