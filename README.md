@@ -79,15 +79,15 @@ pip install control
 
 ### Running Instructions
 
-- Run the main script `main.py` to generate data in `/data`;
-- Watch the terminal or check the logging file `/data/INFO.log` for the runtime information;
-- Confirm that the data files `*.npy` are generated in `/data`;
-- Run `plot.py` to plot the results, and yous should see a figure as above if successful; 
-- The figures may impede each other; Drag the figures for a better view.
+- Run the main script `main.py`;
+- Watch the terminal for runtime information;
+- The figures will show up at the end of running;
+- The figures may impede each other; Drag the figures for a better view;
+- Check out the logging file `INFO.log` for the runtime information.
 
 ### Fine-Tuning the Code
 
-Feel free to try out the code with different parameter settings in the `configs.py` file.
+Feel free to try out the code with different parameter settings in the `commons/configs.py` file.
 
 - Change the coordinates of the regions in the `RG` dictionary to construct a different map;
 - Change the color map in the `CM` dictionary for preferred layout;

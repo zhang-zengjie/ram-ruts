@@ -1,5 +1,5 @@
 import numpy as np
-from commons.functions import PRT, calculate_probabilities
+from .functions import PRT, calculate_probabilities
 from gurobipy import GRB
 from probstlpy.solvers.gurobi.gurobi_micp import GurobiMICPSolver
 import logging

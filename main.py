@@ -1,7 +1,8 @@
 import numpy as np
 from gurobipy import GRB
 from commons.functions import config_logger
-from configs import get_agent, get_spec
+from commons.configs import get_agent, get_spec
+from commons.plot_fig import plot_fig
 import logging
 
 seed = 3                # Set random seed
@@ -13,8 +14,7 @@ agent = get_agent(n, N)
 _, lists = get_spec(n)
 times, specs = lists
 
-
-config_logger(logging, 'results/INFO.log')
+config_logger(logging, 'INFO.log')
 for t in range(N):
 
     if t in times:
@@ -26,8 +26,4 @@ for t in range(N):
 
     agent.apply_control(t, agent.probe_task(t))
 
-# Save Memory
-np.save('results/' + agent.name + '_prob.npy', agent.accept_prob)
-np.save('results/' + agent.name + '_accepted_time.npy', agent.accept_time)
-np.save('results/' + agent.name + '_meas_state.npy', agent.xx)
-np.save('results/' + agent.name + '_hist_nom_state.npy', agent.zh)
+plot_fig(agent)
