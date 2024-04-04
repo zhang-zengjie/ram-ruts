@@ -18,7 +18,7 @@ def plot_fig(agent):
     plt.figure(figsize=(5, 2))
 
     # Plot in figure
-    for j, t in enumerate(atime[1:]):
+    for j, t in enumerate(atime[0:]):
         plt.plot(range(t, N), prob[j, t:].T, 'o:', linewidth=2,
                 markersize=4, label=r'$\rho_{}$'.format({j}) + r'$_{,k}$', color=STATE_COLOR[j])
 
