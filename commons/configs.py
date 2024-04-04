@@ -1,5 +1,5 @@
 import numpy as np
-from commons.agent import Agent
+from .agent import Agent
 from probstlpy.systems.linear import LinearSystem
 from probstlpy.benchmarks.common import inside_rectangle_formula, outside_rectangle_formula
 
