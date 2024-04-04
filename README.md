@@ -1,22 +1,22 @@
 # Risk-Aware Stochastic MPC for Run-Time Specifications in Signal Temporal Logic (RAM-RuTS)
 
-A Python library used to perform Model Predictive Control (MPC) for a single stochastic agent with run-time Signal Temporal Logic specifications.
+A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic specifications.
 
 ## Quick Information
 
-This library is used to facilitate the capability of robotic systems to execute dynamically assigned tasks with strict risk limitation.
+This library is used to facilitate the capability of robotic systems to execute dynamically assigned tasks with strict risk limitations.
 
 ### Scenario
 
-This library considers an essential case handing scenario as follows, where a robot is required to:
+This library considers an essential case handling scenario as follows, where a robot is required to:
 
 - Start from `HOME`;
 - Reach a `TARGET` on request;
 - Reach the `CHARGER` on request;
 - Visit `HOME` sufficiently often on request;
-- Stay inside the work space.
+- Stay inside the workspace.
 
-`On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probability sense.
+`On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probabilistic sense.
 
 [![MIT license](map.svg)](CASE)
 
@@ -51,7 +51,7 @@ The `probstlpy` library in this project is modified from the [stlpy](https://git
  
 1. Install conda following this [instruction](https://conda.io/projects/conda/en/latest/user-guide/install/index.html);
 
-2. Open conda shell, create an independent project environment;
+2. Open the conda shell, and create an independent project environment;
 ```
 conda create --name ram-ruts python=3.11
 ```
@@ -75,7 +75,7 @@ python -m pip install gurobipy
 pip install control
 ```
 
-6. Last but not least, activate the `gurobi` license (See [How To](https://www.gurobi.com/documentation/current/remoteservices/licensing.html)). Note that this project is compatible with `gurobi` Released version `11.0.1`. Keep your `gurobi` updated in case incompatibility. 
+6. Last but not least, activate the `gurobi` license (See [How To](https://www.gurobi.com/documentation/current/remoteservices/licensing.html)). Note that this project is compatible with `gurobi` Released version `11.0.1`. Keep your `gurobi` updated in case of incompatibility. 
 
 ### Running Instructions
 
@@ -93,7 +93,7 @@ Feel free to try out the code with different parameter settings in the `commons/
 - Change the color map in the `CM` dictionary for preferred layout;
 - Change the standard deviation variable `Sigma` for different noise levels;
 - Change the initial position of the robot in `x0`;
-- Customize the lists of runtime specifications `specs` and their instants `times` for various tasks.
+- Customize the lists of runtime specifications `specs` and their instants in `times` for various tasks.
 
 ## License
 
