@@ -1,7 +1,7 @@
 import numpy as np
 from commons.agent import Agent
-from stlpy.systems import LinearSystem
-from stlpy.benchmarks.common import inside_rectangle_formula, outside_rectangle_formula
+from probstlpy.systems.linear import LinearSystem
+from probstlpy.benchmarks.common import inside_rectangle_formula, outside_rectangle_formula
 
 # The coordinates of the rectangular regions
 # Each item -> 'REGION NAME': (x_min, x_max, y_min, y_max)

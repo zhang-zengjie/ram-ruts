@@ -1,6 +1,6 @@
-# Risk-Aware Stochastic MPC for Run-Time specifications in Signal Temporal Logic (RaM-RutTL)
+# Risk-Aware Stochastic MPC for Run-Time Specifications in Signal Temporal Logic (RAM-RuTS)
 
-A Python library used to perform Model Predictive Control (MPC) for a single stochastic agent with Run-Time Temporal Logic.
+A Python library used to perform Model Predictive Control (MPC) for a single stochastic agent with run-time Signal Temporal Logic specifications.
 
 ## Quick Information
 
@@ -18,11 +18,16 @@ This library considers an essential case handing scenario as follows, where a ro
 
 `On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probability sense.
 
-[![MIT license](map.svg)](CASE)
+[![MIT license](images/map.svg)](CASE)
 
 ### Associated Research Work
 
-This library is associated with the Arxiv article in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165).
+This library is associated with the Arxiv article in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which is to be presented on the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
+
+
+### Relation with Existing Toolbox
+
+The `probstlpy` library in this project is modified from the [stlpy](https://github.com/vincekurtz/stlpy/blob/main/README.md) toolbox. 
 
 ## Installation
 
@@ -34,9 +39,13 @@ This library is associated with the Arxiv article in [https://arxiv.org/abs/2402
  - *MacOS* (compatible in general)
 
 **Python Environment**
- - Python version: `>=3.7` or `<=3.11`
+ - Python version: test passed on `python=3.11`
  - **Recommended**: IDE ([VS code](https://code.visualstudio.com/) or [Pycharm](https://www.jetbrains.com/pycharm/)) and [Conda](https://www.anaconda.com/)
- - Required Packages: `numpy`, `treelib`, `gurobi`, `matplotlib`, `scipy`. 
+ - Required Packages: `numpy`, `treelib`, `matplotlib`, `scipy`. 
+ 
+ **Required Libraries**
+ - `gurobipy` solver (**license** required, see [How to Get a Gurobi License](https://www.gurobi.com/solutions/licensing/))
+ - `Python control` toolbox (see [Documentation](https://python-control.readthedocs.io/en/latest/intro.html))
  
 ### Quick Installation
  
@@ -44,27 +53,29 @@ This library is associated with the Arxiv article in [https://arxiv.org/abs/2402
 
 2. Open conda shell, create an independent project environment;
 ```
-conda create --name ram-ruttl python=3.10
+conda create --name ram-ruts python=3.11
 ```
 
 3. In the same shell, activate the created environment
 ```
-conda activate ram-ruttl
+conda activate ram-ruts
 ```
 
-4. In the same shell, within the `ram-ruttl` environment, install the dependencies one by one
-
-```
+4. In the same shell, within the `ram-ruts` environment, install the dependencies one by one
+ ```
 conda install -c anaconda numpy
 conda install -c conda-forge treelib
-conda install -c gurobi gurobi
 conda install -c conda-forge matplotlib
 conda install -c anaconda scipy
 ```
 
-**Toolbox stlpy**
+5. In the same shell, within the `ram-ruts` environment, install the libraries
+```
+python -m pip install gurobipy
+pip install control
+```
 
-This benchmark is based on the [stlpy](https://github.com/vincekurtz/stlpy/blob/main/README.md) toolbox. Please cite the source when you develop your own benchmark.
+6. Last but not least, activate the `gurobi` license (See [How To](https://www.gurobi.com/documentation/current/remoteservices/licensing.html)).
 
 ### Running Instructions
 
@@ -86,4 +97,4 @@ Feel free to try out the code with different parameter settings in the `configs.
 
 ## License
 
-For the license of this library, refer to `LICENSE`.
+This project is with a BSD-3 license, refer to `LICENSE` for details.

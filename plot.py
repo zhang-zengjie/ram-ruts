@@ -11,10 +11,10 @@ n = 2                   # System dimension
 
 agent = get_agent(n, N)
 
-prob = np.load('data/' + agent.name + '_prob.npy')
-atime = np.load('data/' + agent.name + '_accepted_time.npy')
-state_meas = np.load('data/' + agent.name + '_meas_state.npy')
-nom_state = np.load('data/' + agent.name + '_hist_nom_state.npy')
+prob = np.load('results/' + agent.name + '_prob.npy')
+atime = np.load('results/' + agent.name + '_accepted_time.npy')
+state_meas = np.load('results/' + agent.name + '_meas_state.npy')
+nom_state = np.load('results/' + agent.name + '_hist_nom_state.npy')
 
 STATE_COLOR = [[0.4, 0.7, 0.4], [1, 0, 0], [1, 0.6, 0], [0, 153/255, 76/255], [0, 0, 1]]
 

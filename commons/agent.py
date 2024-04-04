@@ -1,7 +1,7 @@
 import numpy as np
 from commons.functions import PRT, calculate_probabilities
 from gurobipy import GRB
-from commons.rt_stl_solver import RTSTLSolver
+from probstlpy.solvers.gurobi.gurobi_micp import GurobiMICPSolver
 import logging
 
 
@@ -51,7 +51,7 @@ class Agent:
         self.risk = None
         self.x = None
 
-        self.solver = RTSTLSolver(self.psi, self.sys, self.zz, self.N, self.diag_sigma_inf, uu=self.vv, riskH=self.risk, mark=0)
+        self.solver = GurobiMICPSolver(self.psi, self.sys, self.zz, self.N, self.diag_sigma_inf, uu=self.vv, riskH=self.risk, mark=0)
         self.solver.AddSTLConstraints(self.psi)
         self.solver.AddNewSTLProbConstraint(self.psi)
         self.solver.AddControlBounds(self.u_limits[:, 0], self.u_limits[:, 1])
