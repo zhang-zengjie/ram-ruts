@@ -1,0 +1,43 @@
+2024-04-04 12:54:25,718: agent has accepted the new measurement at step 0!
+2024-04-04 12:54:25,855: agent has accepted the new measurement at step 1!
+2024-04-04 12:54:25,988: agent has accepted the new measurement at step 2!
+2024-04-04 12:54:26,170: agent has accepted the new measurement at step 3!
+2024-04-04 12:54:26,305: agent has accepted the new measurement at step 4!
+2024-04-04 12:54:27,177: agent has accepted the new task GO TO TARGETS at step 5!
+2024-04-04 12:54:27,383: agent has accepted the new measurement at step 5!
+2024-04-04 12:54:27,599: agent has accepted the new measurement at step 6!
+2024-04-04 12:54:27,817: agent has accepted the new measurement at step 7!
+2024-04-04 12:54:28,001: agent has accepted the new measurement at step 8!
+2024-04-04 12:54:28,205: agent has accepted the new measurement at step 9!
+2024-04-04 12:54:28,437: agent has accepted the new measurement at step 10!
+2024-04-04 12:54:28,641: agent has accepted the new measurement at step 11!
+2024-04-04 12:54:28,871: agent has accepted the new measurement at step 12!
+2024-04-04 12:54:29,087: agent has accepted the new measurement at step 13!
+2024-04-04 12:54:29,286: agent has accepted the new measurement at step 14!
+2024-04-04 12:54:29,784: agent has accepted the new task CHARGING at step 15!
+2024-04-04 12:54:30,121: agent has accepted the new measurement at step 15!
+2024-04-04 12:54:30,350: agent has rejected the new measurement at step 16!
+2024-04-04 12:54:30,531: agent has rejected the new measurement at step 17!
+2024-04-04 12:54:30,750: agent has accepted the new measurement at step 18!
+2024-04-04 12:54:31,040: agent has accepted the new measurement at step 19!
+2024-04-04 12:54:32,264: agent has accepted the new task GO HOME at step 20!
+2024-04-04 12:54:32,430: agent has accepted the new measurement at step 20!
+2024-04-04 12:54:32,581: agent has accepted the new measurement at step 21!
+2024-04-04 12:54:32,747: agent has accepted the new measurement at step 22!
+2024-04-04 12:54:32,899: agent has accepted the new measurement at step 23!
+2024-04-04 12:54:33,065: agent has accepted the new measurement at step 24!
+2024-04-04 12:54:33,214: agent has rejected the new measurement at step 25!
+2024-04-04 12:54:33,365: agent has accepted the new measurement at step 26!
+2024-04-04 12:54:33,529: agent has accepted the new measurement at step 27!
+2024-04-04 12:54:33,680: agent has accepted the new measurement at step 28!
+2024-04-04 12:54:33,846: agent has accepted the new measurement at step 29!
+2024-04-04 12:54:34,028: agent has accepted the new measurement at step 30!
+2024-04-04 12:54:34,179: agent has accepted the new measurement at step 31!
+2024-04-04 12:54:34,346: agent has rejected the new measurement at step 32!
+2024-04-04 12:54:34,496: agent has rejected the new measurement at step 33!
+2024-04-04 12:54:34,646: agent has accepted the new measurement at step 34!
+2024-04-04 12:54:34,796: agent has rejected the new measurement at step 35!
+2024-04-04 12:54:34,947: agent has accepted the new measurement at step 36!
+2024-04-04 12:54:35,096: agent has accepted the new measurement at step 37!
+2024-04-04 12:54:35,262: agent has accepted the new measurement at step 38!
+2024-04-04 12:54:35,412: agent has accepted the new measurement at step 39!

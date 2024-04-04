@@ -1,5 +1,5 @@
-from stlpy.solvers.base import STLSolver
-from stlpy.STL import LinearPredicate, NonlinearPredicate
+from ..base import STLSolver
+from ...STL.predicate import LinearPredicate, NonlinearPredicate
 import numpy as np
 
 import gurobipy as gp
@@ -7,7 +7,7 @@ from gurobipy import GRB
 
 import time
 
-class RTSTLSolver(STLSolver):
+class GurobiMICPSolver(STLSolver):
     """
     Given an :class:`.STLFormula` :math:`\\varphi` and a :class:`.LinearSystem`,
     solve at time zero the optimization problem

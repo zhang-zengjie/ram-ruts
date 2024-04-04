@@ -14,7 +14,7 @@ _, lists = get_spec(n)
 times, specs = lists
 
 
-config_logger(logging, 'data/INFO.log')
+config_logger(logging, 'results/INFO.log')
 for t in range(N):
 
     if t in times:
@@ -27,7 +27,7 @@ for t in range(N):
     agent.apply_control(t, agent.probe_task(t))
 
 # Save Memory
-np.save('data/' + agent.name + '_prob.npy', agent.accept_prob)
-np.save('data/' + agent.name + '_accepted_time.npy', agent.accept_time)
-np.save('data/' + agent.name + '_meas_state.npy', agent.xx)
-np.save('data/' + agent.name + '_hist_nom_state.npy', agent.zh)
+np.save('results/' + agent.name + '_prob.npy', agent.accept_prob)
+np.save('results/' + agent.name + '_accepted_time.npy', agent.accept_time)
+np.save('results/' + agent.name + '_meas_state.npy', agent.xx)
+np.save('results/' + agent.name + '_hist_nom_state.npy', agent.zh)
