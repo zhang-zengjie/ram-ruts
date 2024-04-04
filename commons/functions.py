@@ -5,7 +5,7 @@ from scipy.linalg import solve_discrete_lyapunov as dlyap
 
 # Checks whether all elements in list are identical
 def check(list):
-    return all(i == list[0] for i in list)
+    return all(abs(i-list[0]) < 1e-8 for i in list)
 
 def get_coordinates(bounds):
     x_coordinates = [bounds[0], bounds[1], bounds[1], bounds[0]]
@@ -29,7 +29,7 @@ def PRT(sys, Q, R):
     SigmaInf = dlyap(A_K, sys.Sigma)
     assert np.sum(abs(SigmaInf)) != 0  # Check for zero matrix
     assert np.sum(SigmaInf - np.diag(np.diagonal(SigmaInf))) == 0  # Check whether matrix is diagonal
-    # assert check(np.diagonal(SigmaInf))  # Check whether diagonal matrix is spherical
+    assert check(np.diagonal(SigmaInf))  # Check whether diagonal matrix is spherical
 
     return SigmaInf[0, 0], K  # Remember the diagonal value and stabilizing feedback gain
 
