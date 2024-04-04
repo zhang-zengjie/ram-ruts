@@ -22,7 +22,7 @@ This library considers an essential case handling scenario as follows, where a r
 
 ### Associated Research Work
 
-This library is associated with the Arxiv article in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which is to be presented on the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
+This library is associated with the Arxiv article in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which is to be presented in the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
 
 
 ### Relation with Existing Toolbox
