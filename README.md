@@ -1,6 +1,4 @@
-[![BSD-3 license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
-# Risk-Aware MPC for Run-Time Temporal Logic (RaM-RutTL)
+# Risk-Aware Stochastic MPC for Run-Time specifications in Signal Temporal Logic (RaM-RutTL)
 
 A Python library used to perform Model Predictive Control (MPC) for a single stochastic agent with Run-Time Temporal Logic.
 
