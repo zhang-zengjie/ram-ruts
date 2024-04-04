@@ -1,6 +1,8 @@
 *.npy
+*.svg
+*.log
 *.png
 */.DS_store
-*/_pycache_
 */.idea
 */__init__.py
+__pycache__
