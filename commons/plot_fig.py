@@ -30,7 +30,7 @@ def plot_fig(agent):
     plt.ylabel(r'Lower bounds $\rho_{i,k}$ for $\varphi_i$')
     plt.legend(ncol=len(atime))
 
-    plt.savefig('results/risk.svg', bbox_inches='tight', pad_inches=0.1, transparent=True)
+    plt.savefig('risk.svg', bbox_inches='tight', pad_inches=0.1, transparent=True)
 
     # Define figure
     plt.figure(figsize=(8, 3.5))
@@ -71,7 +71,7 @@ def plot_fig(agent):
     plt.legend(loc='lower right')
 
     # Save figure
-    plt.savefig('results/map.svg', bbox_inches='tight', pad_inches=0.1, transparent=True)
+    plt.savefig('map.svg', bbox_inches='tight', pad_inches=0.1, transparent=True)
 
     #Show figure
     plt.show()

@@ -18,7 +18,7 @@ This library considers an essential case handing scenario as follows, where a ro
 
 `On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probability sense.
 
-[![MIT license](images/map.svg)](CASE)
+[![MIT license](map.svg)](CASE)
 
 ### Associated Research Work
 
@@ -75,13 +75,13 @@ python -m pip install gurobipy
 pip install control
 ```
 
-6. Last but not least, activate the `gurobi` license (See [How To](https://www.gurobi.com/documentation/current/remoteservices/licensing.html)).
+6. Last but not least, activate the `gurobi` license (See [How To](https://www.gurobi.com/documentation/current/remoteservices/licensing.html)). Note that this project is compatible with `gurobi` Released version `11.0.1`. Keep your `gurobi` updated in case incompatibility. 
 
 ### Running Instructions
 
 - Run the main script `main.py`;
 - Watch the terminal for runtime information;
-- The figures will show up at the end of running;
+- The figures will show up at the end of running; They are also automatically saved in the root directory;
 - The figures may impede each other; Drag the figures for a better view;
 - Check out the logging file `INFO.log` for the runtime information.
 

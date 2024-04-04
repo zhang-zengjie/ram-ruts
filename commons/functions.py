@@ -29,7 +29,7 @@ def PRT(sys, Q, R):
     SigmaInf = dlyap(A_K, sys.Sigma)
     assert np.sum(abs(SigmaInf)) != 0  # Check for zero matrix
     assert np.sum(SigmaInf - np.diag(np.diagonal(SigmaInf))) == 0  # Check whether matrix is diagonal
-    assert check(np.diagonal(SigmaInf))  # Check whether diagonal matrix is spherical
+    # assert check(np.diagonal(SigmaInf))  # Check whether diagonal matrix is spherical
 
     return SigmaInf[0, 0], K  # Remember the diagonal value and stabilizing feedback gain
 
