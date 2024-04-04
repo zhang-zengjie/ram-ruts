@@ -1,4 +1,5 @@
 *.npy
+*.svg
 *.log
 *.png
 */.DS_store
