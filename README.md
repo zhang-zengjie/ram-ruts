@@ -1,4 +1,4 @@
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![BSD-3 license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # Risk-Aware MPC for Run-Time Temporal Logic (RaM-RutTL)
 
