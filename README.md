@@ -1,5 +1,7 @@
 # Risk-Aware Stochastic MPC for Run-Time Specifications in Signal Temporal Logic (RAM-RuTS)
 
+**Author:** Zengjie Zhang (z.zhang3@tue.nl), Maico H.W. Engelaar (m.h.w.engelaar@tue.nl)
+
 A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic specifications.
 
 ## Quick Information
