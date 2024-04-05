@@ -18,7 +18,7 @@ This library considers an essential case handling scenario as follows, where a r
 
 `On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probabilistic sense.
 
-[![MIT license](map.svg)](CASE)
+[![Map](map.svg)](CASE)
 
 ### Associated Research Work
 
