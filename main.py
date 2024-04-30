@@ -21,7 +21,7 @@ for t in range(N):
         new_task = specs[times.index(t)]
         sln = agent.probe_task(t, new_task)
         if sln[-1] != GRB.OPTIMAL:
-                agent.reject_task(t)
+                agent.reject_task(t, new_task)
         agent.accept_task(t, new_task)
 
     agent.apply_control(t, agent.probe_task(t))
