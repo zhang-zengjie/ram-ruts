@@ -2,7 +2,7 @@
 
 **Author:** *Zengjie Zhang* (z.zhang3@tue.nl) and *Maico H.W. Engelaar* (m.h.w.engelaar@tue.nl).
 
-A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic specifications.
+A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic (STL) specifications.
 
 ## Introduction
 
