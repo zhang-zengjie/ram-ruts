@@ -4,30 +4,29 @@
 
 A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic specifications.
 
-## Quick Information
+## Introduction
 
-This library is used to facilitate the capability of robotic systems to execute dynamically assigned tasks with strict risk limitations.
+A practical engineering system is often required to accomplish given tasks with restricted risk levels. This can be achieved by risk-aware control incorporating the stochastic uncertainty of the system, rendering a stochastic planning problem with signal temporal logic (STL) specifications. 
 
-### Scenario
+Nevertheless, many practical applications need to dynamically assign tasks to the system during runtime. This requires the system to adjust or reschedule its current control strategy to accept the new task. Consider the following restaurant service robot scenario (as illustrated in **Figure 1**), where a service robot staying at the counter (**HOME**) is required to serve two tables (**TARGETS**) while avoiding collision with the wall (**OBSTACLE**). When short of power, it also need to stay in the **CHARGER** for a certain period of time. These tasks may be assigned sequentially in the runtime, some of which are even subject to concurrency or conflict. An example of a task sequence may look like this:
 
-This library considers an essential case handling scenario as follows, where a robot is required to:
+- The robot start from `HOME` at time $0$. It should not go outside the restaurant during the whole time and cannot collide with the wall;
+- At time $5$, the robot receives a command "reaching either `TARGET` between time $20$ and $30$";
+- At time $15$, the robot receives a command "reaching the `CHARGER` between time $20$ and $25$";
+- At time $20$, the robot receives a command "visit `HOME` between $25$ and $30$ and stay there for at least $5$ steps".
 
-- Start from `HOME`;
-- Reach a `TARGET` on request;
-- Reach the `CHARGER` on request;
-- Visit `HOME` sufficiently often on request;
-- Stay inside the workspace.
-
-`On request` means that the corresponding tasks are dynamically assigned without prior notice. The robot is required to accomplish these dynamically assigned tasks with a strict safety guarantee in a probabilistic sense.
+In this setting, the robot needs to reschedule its control strategy each time a new dynamic task is assigned. We expect the robot to accomplish the dynamically as many as possible. However, when the robot realize that it has a high risk of conflict or failure, it can reject the new task while fully focusing on the ongoing task. **Figure 1** illustrate a solution where a robot accomplishes all assigned tasks. The blue line is its actual trajectory, implying sequential reaching "**HOME** $\rightarrow$ **CHARGER** $\rightarrow$ **TARGET** $\rightarrow$ **HOME**", while the lines in other colors are contemporarily planned trajectories that have been rescheduled in each stage.
 
 [![Map](map.svg)](CASE)
 
-### Associated Research Work
+**Figure 1. a restaurant service robot scenario.**
 
-This library is associated with the Arxiv article in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which is to be presented in the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
+### Approach
+
+In a risk-aware control framework, we formulate the physical model of the robot as a single-integrator dynamic system with random dynamic noise and use a set of STL to describe the tasks above. In this sense, risk is quantified by the probability that a certain STL task is not satisfied. The risk also serves as an evidence to support the decision-making of the robot whether a new task should be accepted or rejected. The control synthesis is performed using a tube-based shrinking-horizon model predictive control method. For the theoretical details, please refer to our associated Arxiv paper in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which has been presented in the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
 
 
-### Relation with Existing Toolbox
+#### Relation with Existing Toolbox
 
 The `probstlpy` library in this project is modified from the [stlpy](https://github.com/vincekurtz/stlpy/blob/main/README.md) toolbox. 
 
