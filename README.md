@@ -1,6 +1,6 @@
 # Risk-Aware Stochastic MPC for Run-Time Specifications in Signal Temporal Logic (RAM-RuTS)
 
-**Author:** Zengjie Zhang (z.zhang3@tue.nl), Maico H.W. Engelaar (m.h.w.engelaar@tue.nl)
+**Author:** *Zengjie Zhang* (z.zhang3@tue.nl) and *Maico H.W. Engelaar* (m.h.w.engelaar@tue.nl).
 
 A Python library used to perform Model Predictive Control (MPC) for a stochastic linear system with runtime Signal Temporal Logic specifications.
 
@@ -23,7 +23,7 @@ In this setting, the robot needs to reschedule its control strategy each time a 
 
 ### Approach
 
-In a risk-aware control framework, we formulate the physical model of the robot as a single-integrator dynamic system with random dynamic noise and use a set of STL to describe the tasks above. In this sense, risk is quantified by the probability that a certain STL task is not satisfied. The risk also serves as an evidence to support the decision-making of the robot whether a new task should be accepted or rejected. The control synthesis is performed using a tube-based shrinking-horizon model predictive control method. For the theoretical details, please refer to our associated Arxiv paper in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which has been presented in the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
+In a risk-aware control framework, we formulate the physical model of the robot as a single-integrator dynamic system with random dynamic noise and use a set of STL to describe the tasks above. In this sense, risk is quantified by the probability that a certain STL task is not satisfied. The risk also serves as an evidence to support the decision-making of the robot whether a new task should be accepted or rejected. The control synthesis is performed using a tube-based shrinking-horizon model predictive control method. For the theoretical details, please refer to our associated ArXiv paper in [https://arxiv.org/abs/2402.03165](https://arxiv.org/abs/2402.03165) which has been presented in the 8th IFAC Conference on Analysis and Design of Hybrid Systems, July 1-3, 2024.
 
 
 #### Relation with Existing Toolbox
