@@ -17,7 +17,7 @@ Nevertheless, many practical applications need to dynamically assign tasks to th
 
 In this setting, the robot needs to reschedule its control strategy each time a new dynamic task is assigned. We expect the robot to accomplish as many dynamic tasks as possible. However, when the robot realizes its high risk of conflict or failure, it can reject the new task while fully focusing on the ongoing task. **Figure 1** illustrates a solution where a robot accomplishes all assigned tasks. The blue line is its actual trajectory, implying sequential reaching "**HOME** $\rightarrow$ **CHARGER** $\rightarrow$ **TARGET** $\rightarrow$ **HOME**", while the lines in other colors are contemporarily planned trajectories that have been rescheduled in each stage.
 
-[![Map](map.svg)](CASE)
+[![Map](figs/map.svg)](CASE)
 
 **Figure 1. A restaurant service robot scenario.**
 
